@@ -16,6 +16,10 @@
           <th>Bewertung</th>
           <th>Breitengrad</th>
           <th>Längengrad</th>
+          <th>Land</th>
+          <th>Ort</th>
+          <th>Strasse</th>
+          <th>PLZ</th>
           <th>Zeitstempel</th>
         </tr>
       </thead>
@@ -26,6 +30,10 @@
             <td><%= rating.rating %></td>
             <td><%= rating.latitude %></td>
             <td><%= rating.longitude %></td>
+            <td><%= rating.country %></td>
+            <td><%= rating.locality %></td>
+            <td><%= rating.street %></td>
+            <td><%= rating.postalCode %></td>
             <td><%= rating.timestamp %></td>
           </tr>
         <% }); %>
