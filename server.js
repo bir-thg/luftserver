@@ -42,7 +42,7 @@ app.post('/rating', (req, res) => {
 });
 
 // Endpunkt zum Anzeigen der Bewertungen
-app.get('/', (req, res) => {
+app.get('/luft', (req, res) => {
   db.all("SELECT * FROM ratings", (err, rows) => {
     if (err) {
       return res.status(500).send('Fehler beim Abrufen der Bewertungen');
